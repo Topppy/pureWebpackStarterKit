@@ -26,12 +26,11 @@ yarn build 打包压缩文件到dist／目录
 - eslint： 采用airbnb的base配置来规范js代码
 - stylelint： 采用stylelint-config-standard规范css代码
 - autoprefixer： 根据browserlist 添加浏览器兼容前缀
-- pre-commit：提交代码前
+- pre-commit：提交代码前lint代码修改
 
 ## 问题
 
 1. webpack dev server fix 到版本3.1.0是因为，3.1.1和3.1.2 的bug导致HMR not work，[issues](https://github.com/webpack/webpack-dev-server/issues/1366). 如果新版本fix了这个问题，那就可以更新到新版本。
 
 2. 没有添加任何polyfill，可以根据自己的需要自行添加
-
 
