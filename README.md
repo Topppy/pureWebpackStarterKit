@@ -3,7 +3,7 @@
 
 ## 使用
 ### 安装
-1. 克隆 or 下载本项目到本地
+1. 克隆 or 下载本项目到本地 git clone git@github.com:Topppy/pureWebpackStarterKit.git
 
 2. yarn install 安装依赖
 
@@ -34,5 +34,4 @@ yarn build 打包压缩文件到dist／目录
 
 2. 没有添加任何polyfill，可以根据自己的需要自行添加
 
-3. 1
 
