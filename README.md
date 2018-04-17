@@ -22,11 +22,32 @@ yarn build 打包压缩文件到dist／目录
 - tree shaking：打包丢弃无用代码
 - css minify：css压缩
 - cssnext：可以使用css的新特性
-- babel：可以使用ES6、 ES7 语法
+- babel：可以使用ES6、 ES7语法
 - eslint： 采用airbnb的base配置来规范js代码
 - stylelint： 采用stylelint-config-standard规范css代码
-- autoprefixer： 根据browserlist 添加浏览器兼容前缀
+- autoprefixer： 根据browserlist添加浏览器兼容前缀
 - pre-commit：提交代码前lint代码修改
+- profile: webpack打包性能分析
+- happyPack: 打包速度优化
+
+## 结构
+
+├── README.md
+├── index.html           // html文件模板
+├── src
+│   ├── img              // 图片资源
+│   ├── index.js         // js文件入口
+│   ├── style.css        // css文件入口
+│   └── utils.js         // 通用函数
+├── package-lock.json
+├── package.json
+├── postcss.config.js
+├── stats.json
+├── node_modules
+├── webpack.common.js   // webpack通用配置
+├── webpack.dev.js      // webpack开发配置
+├── webpack.prod.js     // webpack打包配置
+└── yarn.lock
 
 ## 问题
 

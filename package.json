@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "private": true,
+  "engines": {
+    "node": ">=8.9",
+    "npm": ">=5.6"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --open --config webpack.dev.js --color",
@@ -10,7 +14,8 @@
     "lint:js": "eslint src",
     "lint:css": "stylelint \"src/**/*.{,css,less,scss,sss}\"",
     "lint": "npm run lint:js && npm run lint:css",
-    "precommit": "echo 'Pre-commit checks...' && lint-staged"
+    "precommit": "echo 'Pre-commit checks...' && lint-staged",
+    "profile": " webpack --config webpack.prod.js --profile --json > stats.json"
   },
   "author": "topppy",
   "license": "ISC",
@@ -28,6 +33,8 @@
     "eslint-plugin-import": "^2.10.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^1.1.11",
+    "happypack": "^5.0.0-beta.3",
+    "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "husky": "^0.14.3",
     "lint-staged": "^7.0.4",
@@ -39,6 +46,7 @@
     "stylelint": "^9.2.0",
     "stylelint-config-standard": "^18.2.0",
     "stylelint-order": "^0.8.1",
+    "url-loader": "^1.0.1",
     "webpack": "^4.4.1",
     "webpack-cli": "^2.0.13",
     "webpack-dev-server": "3.1.0",
@@ -69,7 +77,7 @@
       "eslint --fix",
       "git add"
     ],
-    "*.{css,less,scss,sss}": [
+    "src/**/*.{css,less,scss,sss}": [
       "stylelint --fix",
       "git add"
     ]

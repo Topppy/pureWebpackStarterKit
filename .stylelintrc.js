@@ -9,7 +9,7 @@ module.exports = {
 
   plugins: [
     // stylelint plugin to sort CSS rules content with specified order
-    // https://github.com/hudochenkov/stylelint-order
+    // style
     'stylelint-order',
   ],
 
