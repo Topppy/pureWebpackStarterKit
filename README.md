@@ -1,5 +1,6 @@
 # pure webpack starter kit
 这是一个没有框架依赖的webpack4脚手架，纯html、css、js项目，参照webpack文档搭建，自己也是学习了一遍。
+适合用于开发不使用Vue或者React的简单静态页面项目，打包结果为一个html，一个css，一个js。
 
 ## 使用
 ### 安装
@@ -32,6 +33,7 @@ yarn build 打包压缩文件到dist／目录
 
 ## 结构
 
+```
 ├── README.md
 ├── index.html           // html文件模板
 ├── src
@@ -48,6 +50,7 @@ yarn build 打包压缩文件到dist／目录
 ├── webpack.dev.js      // webpack开发配置
 ├── webpack.prod.js     // webpack打包配置
 └── yarn.lock
+```
 
 ## 问题
 
